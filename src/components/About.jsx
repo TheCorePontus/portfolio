@@ -1,5 +1,5 @@
 import aboutImg from '../assets/about.jpg'
-import { ABOUT_TEXT } from '../constants'
+import { ABOUT_TEXT, ACH1, ACH2, ACH3, ACH4 } from '../constants'
 import { motion } from 'framer-motion'
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
              transition={{duration: 0.5}}
              className="w-full lg:w-1/2 lg:p-8">
                 <div className="flex items-center justify-center">
-                    <img className='rounded-2xl' src={aboutImg} alt="" />
+                    <img className='rounded-2xl' src={aboutImg} alt="" height={200} />
                 </div>
             </motion.div>
             <motion.div
@@ -23,6 +23,10 @@ const About = () => {
                 <div className='flex justify-center lg:justify-start'>
                     <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
                 </div>
+                <p className=' max-w-xl py-3'>{ACH1}</p>
+                    <p className=' max-w-xl py-3'>{ACH2}</p>
+                    <p className=' max-w-xl py-3'>{ACH3}</p>
+                    <p className=' max-w-xl py-3'>{ACH4}</p>
             </motion.div>
         </div>
     </div>
